@@ -1,0 +1,13 @@
+applications:
+- name: workflow-api-test
+  path: ../target/workflow-api-test-0.0.1-SNAPSHOT.jar
+  memory: 1024M
+  timeout: 600
+  random-route: true
+  env:
+    SET_LOGGING_LEVEL: {ROOT: INFO, com.sap.cloud.sdk: INFO}
+    JBP_CONFIG_SAPJVM_MEMORY_SIZES: metaspace:128m..
+  services:
+    - wm_workflow
+    - bpmworkflowmanagement
+
