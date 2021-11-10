@@ -1,4 +1,4 @@
-package com.dunavi.workflowapitest;
+package com.dunavi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

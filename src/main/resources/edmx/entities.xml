@@ -11,10 +11,8 @@
 			</EntityType>
 			<EntityContainer Name="default" m:IsDefaultEntityContainer="true">
 				<EntitySet EntityType="entities.UploadDocument" Name="UploadDocument" />
-                <FunctionImport Name="StartTenderApprovalWorkflow" ReturnType="Edm.String" m:HttpMethod="GET">
-                    <Parameter MaxLength="0" Mode="In" Name="Document" Type="Edm.String"/>
-                </FunctionImport>
-                <FunctionImport Name="AllowedTenderApprovalWorkflow" ReturnType="Edm.Boolean" m:HttpMethod="GET">
+                <FunctionImport Name="StartUploadDocument" ReturnType="Edm.Binary" m:HttpMethod="POST">
+                    <Parameter MaxLength="0" Mode="In" Name="FileData" Type="Edm.Binary"/>
                 </FunctionImport>
 			</EntityContainer>
 
